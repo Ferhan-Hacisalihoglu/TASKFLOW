@@ -1,0 +1,42 @@
+[
+    {
+    "id": 1,
+    "title": "Market Alışverişini Yap",
+    "description": "Haftalık market alışverişini tamamla ve eksik ürünleri al",
+    "status": "in-progress",
+    "priority": "high",
+    "assignee": "ferhan",
+    "createdAt": "2026-09-19T09:00:00.000Z",
+    "updatedAt": "2026-09-19T14:15:00.000Z"
+  },
+  {
+    "id": 2,
+    "title": "Doktor Randevusu Al",
+    "description": "Gelecek hafta için uygun bir doktor randevusu oluştur",
+    "status": "todo",
+    "priority": "medium",
+    "assignee": "ferhan",
+    "createdAt": "2026-09-19T10:30:00.000Z",
+    "updatedAt": "2026-09-19T10:30:00.000Z"
+  },
+  {
+    "id": 3,
+    "title": "Ev Temizliğini Yap",
+    "description": "Salon, mutfak ve yatak odasının genel temizliğini tamamla",
+    "status": "completed",
+    "priority": "medium",
+    "assignee": "ahmet",
+    "createdAt": "2026-09-18T08:00:00.000Z",
+    "updatedAt": "2026-09-19T12:45:00.000Z"
+  },
+  {
+    "id": 4,
+    "title": "Faturaları Öde",
+    "description": "Elektrik, su ve internet faturalarının ödemelerini tamamla",
+    "status": "todo",
+    "priority": "high",
+    "assignee": "ahmet",
+    "createdAt": "2026-09-19T11:00:00.000Z",
+    "updatedAt": "2026-09-19T11:00:00.000Z"
+  }
+]

@@ -1,0 +1,23 @@
+$kind: http-request
+name: POST /tasks
+method: POST
+headers:
+  - key: Content-Type
+    value: application/json
+body:
+  type: json
+  content: |
+    {
+      "title": "Postman Test",
+      "description": "Create task test",
+      "status": "todo",
+      "priority": "high",
+      "assignee": "ferhan"
+    }
+url: '{{baseUrl}}/tasks'
+scripts:
+  - type: afterResponse
+    language: text/javascript
+    code:
+      pm.test('201 Created', () => pm.response.to.have.status(201));
+      pm.test('success true', () => pm.expect(pm.response.json().success).to.be.true);

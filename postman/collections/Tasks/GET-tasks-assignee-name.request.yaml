@@ -1,0 +1,13 @@
+$kind: http-request
+name: GET /tasks/assignee/:name
+method: GET
+url: '{{baseUrl}}/tasks/assignee/ferhan'
+scripts:
+  - type: afterResponse
+    language: text/javascript
+    code: |
+      pm.test('200 OK', () => pm.response.to.have.status(200));
+      pm.test('tasks match assignee', () => {
+        const d = pm.response.json();
+        d.data.forEach(t => pm.expect(t.assignee.toLowerCase()).to.equal('ferhan'));
+      });

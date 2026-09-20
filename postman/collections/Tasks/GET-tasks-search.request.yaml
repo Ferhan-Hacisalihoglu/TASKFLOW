@@ -1,0 +1,13 @@
+$kind: http-request
+name: GET /tasks/search
+method: GET
+url: '{{baseUrl}}/tasks/search?keyword=market'
+queryParams:
+  - key: keyword
+    value: market
+scripts:
+  - type: afterResponse
+    language: text/javascript
+    code:
+      pm.test('200 OK', () => pm.response.to.have.status(200));
+      pm.test('returns count', () => pm.expect(pm.response.json()).to.have.property('count'));

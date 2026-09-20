@@ -1,0 +1,10 @@
+$kind: http-request
+name: GET /reports/completed
+method: GET
+url: '{{baseUrl}}/reports/completed'
+scripts:
+  - type: afterResponse
+    language: text/javascript
+    code:
+      pm.test('200 OK', () => pm.response.to.have.status(200));
+      pm.test('report is completed_tasks', () => pm.expect(pm.response.json().report).to.equal('completed_tasks'));

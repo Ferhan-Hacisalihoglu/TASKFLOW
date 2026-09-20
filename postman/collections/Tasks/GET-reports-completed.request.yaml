@@ -1,7 +1,7 @@
 $kind: http-request
 name: GET /reports/completed
 method: GET
-url: '{{baseUrl}}/reports/completed'
+url: 'http://localhost:3000/reports/completed'
 scripts:
   - type: afterResponse
     language: text/javascript

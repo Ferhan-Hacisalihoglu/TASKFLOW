@@ -1,7 +1,7 @@
 $kind: http-request
 name: GET /tasks/assignee/:name
 method: GET
-url: '{{baseUrl}}/tasks/assignee/ferhan'
+url: 'http://localhost:3000/tasks/assignee/ferhan'
 scripts:
   - type: afterResponse
     language: text/javascript

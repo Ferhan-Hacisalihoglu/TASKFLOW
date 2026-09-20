@@ -1,7 +1,7 @@
 $kind: http-request
 name: GET /tasks/search
 method: GET
-url: '{{baseUrl}}/tasks/search?keyword=market'
+url: 'http://localhost:3000/tasks/search?keyword=market'
 queryParams:
   - key: keyword
     value: market

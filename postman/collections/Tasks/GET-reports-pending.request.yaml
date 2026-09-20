@@ -1,7 +1,7 @@
 $kind: http-request
 name: GET /reports/pending
 method: GET
-url: '{{baseUrl}}/reports/pending'
+url: 'http://localhost:3000/reports/pending'
 scripts:
   - type: afterResponse
     language: text/javascript

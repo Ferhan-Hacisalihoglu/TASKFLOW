@@ -1,7 +1,7 @@
 $kind: http-request
 name: 'DELETE /tasks/:id'
 method: DELETE
-url: '{{baseUrl}}/tasks/5'
+url: 'http://localhost:3000/tasks/5'
 scripts:
   - type: afterResponse
     language: text/javascript

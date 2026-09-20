@@ -14,7 +14,7 @@ body:
       "priority": "high",
       "assignee": "ferhan"
     }
-url: '{{baseUrl}}/tasks'
+url: 'http://localhost:3000/tasks'
 scripts:
   - type: afterResponse
     language: text/javascript

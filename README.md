@@ -278,6 +278,5 @@ The request files cover the health check, task CRUD operations, search, assignee
 
 ## Additional Documentation
 
-- `index.md` — requirements analysis and system design
 - `api-design.md` — detailed endpoint documentation and examples
-- `postman/` — Postman request and environment files
+

@@ -3,3 +3,6 @@ values:
   - key: baseUrl
     value: "http://localhost:3000"
     type: default
+  - key: baseurl
+    value: "http://localhost:3000"
+    type: default

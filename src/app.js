@@ -1,6 +1,11 @@
 const express = require('express');
 const tasksRouter = require('./routes/tasks');
 const logger = require('./middleware/logger');
+const {
+  getCompletedCount,
+  getPendingCount,
+  getSummary
+} = require('./controller/tasksController');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -10,6 +15,10 @@ app.use(express.json());
 app.use(logger);
 
 app.use('/tasks', tasksRouter);
+
+app.get('/reports/completed', getCompletedCount);
+app.get('/reports/pending', getPendingCount);
+app.get('/reports/summary', getSummary);
 
 app.get('/', (req, res) => {
   res.json({

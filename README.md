@@ -7,6 +7,67 @@
 ![Postman](https://img.shields.io/badge/Postman-API%20Testing-FF6C37?logo=postman&logoColor=white)
 ![JSON Storage](https://img.shields.io/badge/Storage-JSON%20File-000000?logo=json&logoColor=white)
 
+## Türkçe
+
+TASKFLOW, Node.js ve Express.js kullanılarak geliştirilmiş görev ve proje yönetimi REST API'sidir.
+
+### Özellikler
+
+- Görev oluşturma, listeleme, detay görüntüleme, güncelleme ve silme
+- Görevleri ekip üyelerine atama
+- Görev durumu ve öncelik takibi
+- Tüm API istekleri için logger middleware
+- Görev verileri için validation middleware
+- Durum, öncelik ve sorumlu kişiye göre filtreleme
+- Başlık ve açıklamaya göre görev arama
+- Sıralama ve sayfalama
+- Tamamlanan, bekleyen ve genel sistem raporları
+- JSON dosyası tabanlı veri saklama
+- Jest testleri ve Postman API testleri
+
+### Kurulum ve Çalıştırma
+
+```bash
+npm install
+npm start
+```
+
+API varsayılan olarak şu adreste çalışır:
+
+```text
+http://localhost:3000
+```
+
+Geliştirme modunda çalıştırmak için:
+
+```bash
+npm run dev
+```
+
+Testleri çalıştırmak için:
+
+```bash
+npm test
+```
+
+### Temel Endpoint'ler
+
+| Method | Endpoint | Açıklama |
+|---|---|---|
+| `GET` | `/` | API durum kontrolü |
+| `POST` | `/tasks` | Yeni görev oluşturur |
+| `GET` | `/tasks` | Tüm görevleri listeler |
+| `GET` | `/tasks/:id` | Görev detayını getirir |
+| `PUT` | `/tasks/:id` | Görevi günceller |
+| `DELETE` | `/tasks/:id` | Görevi siler |
+| `GET` | `/reports/completed` | Tamamlanan görev sayısı |
+| `GET` | `/reports/pending` | Bekleyen görev sayısı |
+| `GET` | `/reports/summary` | Genel görev özeti |
+
+Detaylı API açıklamaları için [`api-design.md`](api-design.md) dosyasına bakabilirsiniz. Postman test dosyaları [`postman/`](postman/) klasöründe bulunmaktadır.
+
+---
+
 Task and project management REST API built with Node.js and Express.js.
 
 TASKFLOW provides CRUD operations for tasks, request logging, validation, filtering, search, pagination, sorting, and basic task reports.

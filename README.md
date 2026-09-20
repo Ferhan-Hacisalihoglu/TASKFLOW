@@ -1,5 +1,12 @@
 # TASKFLOW
 
+![Node.js](https://img.shields.io/badge/Node.js-18%2B-339933?logo=node.js&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-5-000000?logo=express&logoColor=white)
+![Jest](https://img.shields.io/badge/Jest-30-C21325?logo=jest&logoColor=white)
+![npm](https://img.shields.io/badge/npm-10%2B-CB3837?logo=npm&logoColor=white)
+![Postman](https://img.shields.io/badge/Postman-API%20Testing-FF6C37?logo=postman&logoColor=white)
+![JSON Storage](https://img.shields.io/badge/Storage-JSON%20File-000000?logo=json&logoColor=white)
+
 Task and project management REST API built with Node.js and Express.js.
 
 TASKFLOW provides CRUD operations for tasks, request logging, validation, filtering, search, pagination, sorting, and basic task reports.

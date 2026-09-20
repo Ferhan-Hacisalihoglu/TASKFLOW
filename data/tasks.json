@@ -1,13 +1,13 @@
 [
-    {
+  {
     "id": 1,
     "title": "Market Alışverişini Yap",
     "description": "Haftalık market alışverişini tamamla ve eksik ürünleri al",
-    "status": "in-progress",
+    "status": "completed",
     "priority": "high",
     "assignee": "ferhan",
     "createdAt": "2026-09-19T09:00:00.000Z",
-    "updatedAt": "2026-09-19T14:15:00.000Z"
+    "updatedAt": "2026-09-20T18:59:40.699Z"
   },
   {
     "id": 2,
